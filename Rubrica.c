@@ -3,6 +3,7 @@
 #include <string.h>  // Libreria per la manipolazione delle stringhe
 #include <stdlib.h>  // Libreria standard per funzioni di utilità generale
 
+// Definizione di una struttura per memorizzare i dettagli di un contatto
 struct contact {
     double ph;
     char name[20], add[20];

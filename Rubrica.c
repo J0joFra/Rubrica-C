@@ -13,6 +13,7 @@ char name[20];         // Array per memorizzare temporaneamente il nome del cont
 FILE *fp, *ft;         // Puntatori a file per operazioni di lettura e scrittura
 int i, n, ch, l, found;  // Variabili di controllo
 
+// Funzione per pulire l'input rimanente
 void flush_stdin() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);

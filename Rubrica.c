@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <conio.h>
-#include <string.h>
-#include <stdlib.h>
+#include <stdio.h>   // Libreria standard di input/output
+#include <conio.h>   // Libreria per la gestione della console
+#include <string.h>  // Libreria per la manipolazione delle stringhe
+#include <stdlib.h>  // Libreria standard per funzioni di utilità generale
 
 struct contact {
     double ph;

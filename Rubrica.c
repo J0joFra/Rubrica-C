@@ -19,15 +19,23 @@ void flush_stdin() {
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
+// Funzione principale del programma
 int main() {
     do {
-        system("cls");    // pulisco tutto e ristampo dopo
+        system("cls");    // Pulisce lo schermo della console
+        // Stampa il menu principale
         printf("\n\t\t=========================================================\n\t\t\xB3\t\t  RUBRICA \t TELEFONICA  \t\t\xB3\n\t\t=========================================================");
         printf("\n\n\n\t\t\t\tMenu principale\n\t\t\t\t======================");
         printf("\n\t\t\t\t[1] Nuovo contatto\n\t\t\t\t[2] Lista contatti\n\t\t\t\t[3] Modifica contatto\n\t\t\t\t[4] Cancella contatto\n\t\t\t\t[0] Esci");
         printf("\n\t\t\t\t======================\n\t\t");
         printf("\n\t\t\t\tSeleziona una scelta:");
-        scanf("%d", &ch);
+        scanf("%d", &ch);  // Legge la scelta dell'utente
+
+        switch (ch) {
+            case 0: // Uscita dal programma
+                system("cls");
+                printf("\n\n\t\tBYE BYE");
+                break;
 
         switch (ch) {
             case 0: // ultimo 

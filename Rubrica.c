@@ -9,9 +9,9 @@ struct contact {
     char name[20], add[20];
 } list;
 
-char name[20];
-FILE *fp, *ft;
-int i, n, ch, l, found;
+char name[20];         // Array per memorizzare temporaneamente il nome del contatto
+FILE *fp, *ft;         // Puntatori a file per operazioni di lettura e scrittura
+int i, n, ch, l, found;  // Variabili di controllo
 
 void flush_stdin() {
     int c;
